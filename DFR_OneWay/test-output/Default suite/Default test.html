@@ -1,0 +1,347 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 29 15:50:29 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>56 seconds (56981 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='domestic_flight_resultlist.DFR_FlightStops.OpenOway()'><b>OpenOway</b><br>Test class: domestic_flight_resultlist.DFR_FlightStops</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+4}&quot;,&quot;minVersion&quot;:&quot;45.0.1&quot;,&quot;maxVersion&quot;:&quot;45.0.1&quot;}],&quot;targetPlatforms&quot;:[],&quot;seen&quot;:true}
+1459246859520	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1459246859520	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;{20a82645-c095-46ed-80e3-08825760534b}&quot;,&quot;syncGUID&quot;:&quot;5-R2JKSre_RH&quot;,&quot;location&quot;:&quot;winreg-app-global&quot;,&quot;version&quot;:&quot;0.0.0&quot;,&quot;type&quot;:&quot;extension&quot;,&quot;internalName&quot;:null,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;icons&quot;:{},&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;Microsoft .NET Framework Assistant&quot;,&quot;description&quot;:&quot;Adds ClickOnce support and the ability to report installed .NET versions to the web server.&quot;,&quot;creator&quot;:&quot;Microsoft&quot;,&quot;homepageURL&quot;:&quot;http://www.windowsclient.net/&quot;},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Windows\\Microsoft.NET\\Framework\\v3.5\\Windows Presentation Foundation\\DotNetAssistantExtension&quot;,&quot;installDate&quot;:1456115997824,&quot;updateDate&quot;:1456115997824,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:false,&quot;skinnable&quot;:false,&quot;size&quot;:42347,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;1.5&quot;,&quot;maxVersion&quot;:&quot;9.*.*&quot;}],&quot;targetPlatforms&quot;:[{&quot;os&quot;:&quot;WINNT&quot;,&quot;abi&quot;:null}],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:0,&quot;seen&quot;:true}
+1459246859521	DeferredSave.extensions.json	DEBUG	Save changes
+1459246859521	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1459246859521	addons.xpi-utils	DEBUG	Updating add-on states
+1459246859523	addons.xpi-utils	DEBUG	Writing add-ons list
+1459246859532	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1459246859534	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 0.1
+1459246859554	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1459246859554	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1459246859554	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1459246859571	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1459246859572	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1459246859572	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1459246859572	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1459246859572	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1459246859573	addons.manager	DEBUG	Starting provider: GMPProvider
+1459246859580	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1459246859581	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1459246859581	addons.manager	DEBUG	Starting provider: PluginProvider
+1459246859581	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1459246859581	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1459246859582	addons.manager	DEBUG	Completed startup sequence
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs
+1459246863594	DeferredSave.extensions.json	DEBUG	Starting write
+1459246864022	addons.repository	DEBUG	No addons.json found.
+1459246864022	DeferredSave.addons.json	DEBUG	Save changes
+1459246864025	DeferredSave.addons.json	DEBUG	Starting timer
+1459246864069	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1459246864069	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1459246864069	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1459246864073	DeferredSave.extensions.json	DEBUG	Write succeeded
+1459246864073	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1459246864075	DeferredSave.addons.json	DEBUG	Starting write
+1459246864138	DeferredSave.addons.json	DEBUG	Write succeeded
+1459246885090	addons.xpi	DEBUG	Calling bootstrap method shutdown on loop@mozilla.org version 0.1
+
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
+System info: host: &apos;PWSDES065&apos;, ip: &apos;192.168.2.70&apos;, os.name: &apos;Windows Vista&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.0&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:134)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:117)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at generalFunctions.CommonLocators.OpenBrowser(CommonLocators.java:35)
+	at domestic_flight_resultlist.DFR_FlightStops.OpenOway(DFR_FlightStops.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+4}&quot;,&quot;minVersion&quot;:&quot;45.0.1&quot;,&quot;maxVersion&quot;:&quot;45.0.1&quot;}],&quot;targetPlatforms&quot;:[],&quot;seen&quot;:true}
+1459246859520	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1459246859520	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;{20a82645-c095-46ed-80e3-08825760534b}&quot;,&quot;syncGUID&quot;:&quot;5-R2JKSre_RH&quot;,&quot;location&quot;:&quot;winreg-app-global&quot;,&quot;version&quot;:&quot;0.0.0&quot;,&quot;type&quot;:&quot;extension&quot;,&quot;internalName&quot;:null,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;icons&quot;:{},&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;Microsoft .NET Framework Assistant&quot;,&quot;description&quot;:&quot;Adds ClickOnce support and the ability to report installed .NET versions to the web server.&quot;,&quot;creator&quot;:&quot;Microsoft&quot;,&quot;homepageURL&quot;:&quot;http://www.windowsclient.net/&quot;},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Windows\\Microsoft.NET\\Framework\\v3.5\\Windows Presentation Foundation\\DotNetAssistantExtension&quot;,&quot;installDate&quot;:1456115997824,&quot;updateDate&quot;:1456115997824,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:false,&quot;skinnable&quot;:false,&quot;size&quot;:42347,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;1.5&quot;,&quot;maxVersion&quot;:&quot;9.*.*&quot;}],&quot;targetPlatforms&quot;:[{&quot;os&quot;:&quot;WINNT&quot;,&quot;abi&quot;:null}],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:0,&quot;seen&quot;:true}
+1459246859521	DeferredSave.extensions.json	DEBUG	Save changes
+1459246859521	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1459246859521	addons.xpi-utils	DEBUG	Updating add-on states
+1459246859523	addons.xpi-utils	DEBUG	Writing add-ons list
+1459246859532	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1459246859534	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 0.1
+1459246859554	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1459246859554	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1459246859554	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1459246859571	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1459246859572	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1459246859572	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1459246859572	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1459246859572	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1459246859573	addons.manager	DEBUG	Starting provider: GMPProvider
+1459246859580	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1459246859581	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1459246859581	addons.manager	DEBUG	Starting provider: PluginProvider
+1459246859581	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1459246859581	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1459246859582	addons.manager	DEBUG	Completed startup sequence
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs
+1459246863594	DeferredSave.extensions.json	DEBUG	Starting write
+1459246864022	addons.repository	DEBUG	No addons.json found.
+1459246864022	DeferredSave.addons.json	DEBUG	Save changes
+1459246864025	DeferredSave.addons.json	DEBUG	Starting timer
+1459246864069	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1459246864069	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1459246864069	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1459246864073	DeferredSave.extensions.json	DEBUG	Write succeeded
+1459246864073	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1459246864075	DeferredSave.addons.json	DEBUG	Starting write
+1459246864138	DeferredSave.addons.json	DEBUG	Write succeeded
+1459246885090	addons.xpi	DEBUG	Calling bootstrap method shutdown on loop@mozilla.org version 0.1
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:122)
+	... 34 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace21375624", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace21375624'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+4}&quot;,&quot;minVersion&quot;:&quot;45.0.1&quot;,&quot;maxVersion&quot;:&quot;45.0.1&quot;}],&quot;targetPlatforms&quot;:[],&quot;seen&quot;:true}
+1459246859520	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1459246859520	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;{20a82645-c095-46ed-80e3-08825760534b}&quot;,&quot;syncGUID&quot;:&quot;5-R2JKSre_RH&quot;,&quot;location&quot;:&quot;winreg-app-global&quot;,&quot;version&quot;:&quot;0.0.0&quot;,&quot;type&quot;:&quot;extension&quot;,&quot;internalName&quot;:null,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;icons&quot;:{},&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;Microsoft .NET Framework Assistant&quot;,&quot;description&quot;:&quot;Adds ClickOnce support and the ability to report installed .NET versions to the web server.&quot;,&quot;creator&quot;:&quot;Microsoft&quot;,&quot;homepageURL&quot;:&quot;http://www.windowsclient.net/&quot;},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Windows\\Microsoft.NET\\Framework\\v3.5\\Windows Presentation Foundation\\DotNetAssistantExtension&quot;,&quot;installDate&quot;:1456115997824,&quot;updateDate&quot;:1456115997824,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:false,&quot;skinnable&quot;:false,&quot;size&quot;:42347,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;1.5&quot;,&quot;maxVersion&quot;:&quot;9.*.*&quot;}],&quot;targetPlatforms&quot;:[{&quot;os&quot;:&quot;WINNT&quot;,&quot;abi&quot;:null}],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:0,&quot;seen&quot;:true}
+1459246859521	DeferredSave.extensions.json	DEBUG	Save changes
+1459246859521	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1459246859521	addons.xpi-utils	DEBUG	Updating add-on states
+1459246859523	addons.xpi-utils	DEBUG	Writing add-ons list
+1459246859532	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1459246859534	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 0.1
+1459246859554	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1459246859554	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1459246859554	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1459246859571	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1459246859572	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1459246859572	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1459246859572	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1459246859572	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1459246859573	addons.manager	DEBUG	Starting provider: GMPProvider
+1459246859580	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1459246859581	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1459246859581	addons.manager	DEBUG	Starting provider: PluginProvider
+1459246859581	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1459246859581	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1459246859582	addons.manager	DEBUG	Completed startup sequence
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs
+1459246863594	DeferredSave.extensions.json	DEBUG	Starting write
+1459246864022	addons.repository	DEBUG	No addons.json found.
+1459246864022	DeferredSave.addons.json	DEBUG	Save changes
+1459246864025	DeferredSave.addons.json	DEBUG	Starting timer
+1459246864069	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1459246864069	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1459246864069	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1459246864073	DeferredSave.extensions.json	DEBUG	Write succeeded
+1459246864073	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1459246864075	DeferredSave.addons.json	DEBUG	Starting write
+1459246864138	DeferredSave.addons.json	DEBUG	Write succeeded
+1459246885090	addons.xpi	DEBUG	Calling bootstrap method shutdown on loop@mozilla.org version 0.1
+
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
+System info: host: &apos;PWSDES065&apos;, ip: &apos;192.168.2.70&apos;, os.name: &apos;Windows Vista&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.0&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:134)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:117)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at generalFunctions.CommonLocators.OpenBrowser(CommonLocators.java:35)
+	at domestic_flight_resultlist.DFR_FlightStops.OpenOway(DFR_FlightStops.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+4}&quot;,&quot;minVersion&quot;:&quot;45.0.1&quot;,&quot;maxVersion&quot;:&quot;45.0.1&quot;}],&quot;targetPlatforms&quot;:[],&quot;seen&quot;:true}
+1459246859520	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1459246859520	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;{20a82645-c095-46ed-80e3-08825760534b}&quot;,&quot;syncGUID&quot;:&quot;5-R2JKSre_RH&quot;,&quot;location&quot;:&quot;winreg-app-global&quot;,&quot;version&quot;:&quot;0.0.0&quot;,&quot;type&quot;:&quot;extension&quot;,&quot;internalName&quot;:null,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;icons&quot;:{},&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;Microsoft .NET Framework Assistant&quot;,&quot;description&quot;:&quot;Adds ClickOnce support and the ability to report installed .NET versions to the web server.&quot;,&quot;creator&quot;:&quot;Microsoft&quot;,&quot;homepageURL&quot;:&quot;http://www.windowsclient.net/&quot;},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Windows\\Microsoft.NET\\Framework\\v3.5\\Windows Presentation Foundation\\DotNetAssistantExtension&quot;,&quot;installDate&quot;:1456115997824,&quot;updateDate&quot;:1456115997824,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:false,&quot;skinnable&quot;:false,&quot;size&quot;:42347,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;1.5&quot;,&quot;maxVersion&quot;:&quot;9.*.*&quot;}],&quot;targetPlatforms&quot;:[{&quot;os&quot;:&quot;WINNT&quot;,&quot;abi&quot;:null}],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:0,&quot;seen&quot;:true}
+1459246859521	DeferredSave.extensions.json	DEBUG	Save changes
+1459246859521	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1459246859521	addons.xpi-utils	DEBUG	Updating add-on states
+1459246859523	addons.xpi-utils	DEBUG	Writing add-ons list
+1459246859532	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1459246859534	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 0.1
+1459246859554	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1459246859554	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1459246859554	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1459246859571	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1459246859572	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1459246859572	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1459246859572	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1459246859572	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1459246859573	addons.manager	DEBUG	Starting provider: GMPProvider
+1459246859580	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1459246859581	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1459246859581	addons.manager	DEBUG	Starting provider: PluginProvider
+1459246859581	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1459246859581	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1459246859582	addons.manager	DEBUG	Completed startup sequence
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs
+1459246863594	DeferredSave.extensions.json	DEBUG	Starting write
+1459246864022	addons.repository	DEBUG	No addons.json found.
+1459246864022	DeferredSave.addons.json	DEBUG	Save changes
+1459246864025	DeferredSave.addons.json	DEBUG	Starting timer
+1459246864069	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1459246864069	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1459246864069	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1459246864073	DeferredSave.extensions.json	DEBUG	Write succeeded
+1459246864073	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1459246864075	DeferredSave.addons.json	DEBUG	Starting write
+1459246864138	DeferredSave.addons.json	DEBUG	Write succeeded
+1459246885090	addons.xpi	DEBUG	Calling bootstrap method shutdown on loop@mozilla.org version 0.1
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:122)
+	... 34 more
+</pre></div></td>
+<td>0</td>
+<td>domestic_flight_resultlist.DFR_FlightStops@194a1b5</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='domestic_flight_resultlist.DFR_FlightStops.CloseOway()'><b>CloseOway</b><br>Test class: domestic_flight_resultlist.DFR_FlightStops</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='domestic_flight_resultlist.DFR_FlightStops.FlightStops()'><b>FlightStops</b><br>Test class: domestic_flight_resultlist.DFR_FlightStops</td>
+<td></td>
+<td>0</td>
+<td>domestic_flight_resultlist.DFR_FlightStops@194a1b5</td></tr>
+</table><p>
+</body>
+</html>
